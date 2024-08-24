@@ -21,6 +21,11 @@
     <span class="ball"></span>
   </label>
     </div> -->
+    <div id="checkbox">
+        <button id="theme-toggle">Toggle Theme</button>
+    </div>
+    
+
     <div class="body-main">
         
         <div class="left">
@@ -41,22 +46,28 @@
         </div>
         <div class="middle">
             <div class="middle-main" id="middlemain">
-               <!-- // <img src="https://www.shreyaghoshal.com/assest/images/shreya-image.png" alt="">
+               // <img src="https://www.shreyaghoshal.com/assest/images/shreya-image.png" alt="">
                 <p class="songname">Teri Ore</p>
-                <p class="author">Shreya Ghoshal</p> -->
+                <p class="author">Shreya Ghoshal</p>
             </div>
             <div class="middle-audio" id="middleaudio">
-                <audio controls autoplay>
-                    <source src="https://assets.mixkit.co/music/580/580.mp3" type="audio/mpeg">
+                <audio controls>
+                    <source src="Audio2.mp3" type="audio/mpeg">
                     Your browser does not support the audio element.
                     </audio>
+                    <div class="controls">
+                        <button id="prevBtn">Prev</button>
+                        <button id="playPauseBtn">Play</button>
+                        <button id="nextBtn">Next</button>
+                    </div>
                     
             </div>
+
             <div><button class="addtoplay"> Add to PlayList</button></div>
            
             
         </div>
-        <div class="right">
+        <!-- <div class="right">
             <div class="playlist-add">
                 <input type="text" placeholder="Enter PlayList Name" class="Input-List" id="InputList">
                 <button class="List-btn" id="Listbtn">Create PlayList</button>
@@ -68,6 +79,32 @@
                 <button id="toggleAllPlaylists">All Playlists</button>
                 <ul class="allPlaylists" style="display: block;"></ul>
             </div>
+        </div>
+    </div> -->
+
+    <div id="playlist-section">
+        <header>
+            <h1>My Playlists</h1>
+            <button id="create-playlist-button">Create New Playlist</button>
+        </header>
+        <div id="playlists-container">
+            <!-- Existing playlists will be displayed here -->
+        </div>
+    </div>
+
+    <!-- Create Playlist Modal -->
+    <div id="create-playlist-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal">&times;</span>
+            <h2>Create New Playlist</h2>
+            <form id="create-playlist-form">
+                <label for="playlist-title">Title:</label>
+                <input type="text" id="playlist-title" required>
+                <label for="playlist-description">Description:</label>
+                <!-- <textarea id="playlist-description"></textarea> -->
+                <button type="submit">Save</button>
+                <button type="button" id="cancel-create">Cancel</button>
+            </form>
         </div>
     </div>
     <script src="https://kit.fontawesome.com/4a8debace1.js" crossorigin="anonymous"></script>
