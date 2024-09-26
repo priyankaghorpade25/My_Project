@@ -6,18 +6,18 @@ export default class productModel{
         this.price = _price;
         this.imageUrl = _imageurl;
     }
-    static get(){
+    static getAll(){
         return products;
     }
-    static add(productObj){
+    static add(productObj,imagePath){
         let newProduct = new productModel(
             products.length+1,
             productObj.name,
             productObj.desc,
             productObj.price,
-            productObj.imageUrl,
+            imagePath
         )
-        products.push(newProduct);
+        products.push(newProduct)
     }
     static getByID(id){
         return products.find((product)=>product.id==id);
