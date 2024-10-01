@@ -7,6 +7,8 @@ import { uploadFile } from './src/middlewares/update-product.middleware.js';
 import UserController from './src/controller/user.controller.js';
 import session from 'express-session';
 import {auth} from "./src/middlewares/auth.middleware.js"
+import cookieParser from "cookie-parser";
+import { setLastVisit } from './src/middlewares/lastVisit.middleware.js';
 
 // create an object to use controller functions
 const projController = new projectController();
@@ -29,6 +31,10 @@ server.use(session({
     saveUninitialized: true,
     cookie: { secure: false } // Set to true if using HTTPS
 }));
+
+server.use(cookieParser());
+server.use(setLastVisit);
+
 
 
 // create routes for calls
