@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en " class="from-html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sign in Sign up Page</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    Sign in
+<body class="form-body">
+    <div class="form-container">
+
+        <!-- Initial sign in sign up -->
+   
+        <input  name ="tab" type="radio" id="sign-intag" checked>
+        <label for="sign-intag">Sign In</label>
+        <input  name ="tab" type="radio" id="sign-uptag">
+        <label for="sign-uptag">Sign Up</label>
+
+        <!--Sign In Form -->
+    
+        <div class=" form sign-inform">
+            <h1>Sign In</h1>
+            <form action="#" method="POST">
+                
+                <input type="text" id="name" placeholder="Username" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Sign In</button>
+            </form>
+            <p class="form-text">Dont't have an account?<label for="sign-uptag" class="form-label">Sign Up Here</label></p>
+        </div>
+
+
+
+        <!-- Sign Up form -->
+
+        <div class="form sign-upform">
+            <h1>Sign Up</h1>
+            <form action="#" method="POST">
+                
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit" >Sign Up</button>
+            </form>
+            <p class="form-text">Already have an account? <label for="sign-intag" class="form-label">Sign In Here</label></p>
+        </div>
+</div>
+
 </body>
 </html>
