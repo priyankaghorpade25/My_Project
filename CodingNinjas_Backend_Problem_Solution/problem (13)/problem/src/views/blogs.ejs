@@ -1,0 +1,16 @@
+
+<h1>Blog Posts</h1>
+    <div id="blog-data">
+        <% blogs.forEach(blog => { %>
+            <div>
+            
+                <h2><%= blog.title %></h2>
+                
+                <p>"<%= blog.description %>"</p>
+                <img src="<%= blog.img %>" alt="<%= blog.title %>" style="height:150px;width:150px">
+            </div>
+                
+            
+        <% }) %>
+    </div>
+    <a href="/createblog">Create a New Blog Post</a>
