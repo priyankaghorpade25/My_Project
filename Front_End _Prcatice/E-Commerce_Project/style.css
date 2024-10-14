@@ -183,6 +183,7 @@ body, html {
     }
 }
 .offer-text{
+  display:flex;
     background-color: gray;
     font-family:Georgia;
     animation: flash 2s ease-in-out infinite;
@@ -441,6 +442,108 @@ tr:hover {
         padding: 0.5em;
     }
   }
+
+.card{
+  transform: translateY(20px);
+}
+.card img:hover{
+  transform: scale(1.1);
+}
+.card-body{
+  display:grid;
+  justify-content: space-between;
+}
+.card{
+  margin:auto;
+}
+.btn{
+  margin-top:auto; /*align item to bottom of the card body*/
+}
+
+
+/*Shopping Cart Style*/
+.cart-title{
+  text-align:center;
+}
+#cart-items{
+  display:flex;
+  
+  
+}
+.cart-item{
+  margin:20px;
+  border: 1px solid gray;
+  padding:20px 20px;
+}
+.item-image{
+  width:10rem;
+  height:10rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
  @media (max-width: 980px) and (min-width: 769px) {

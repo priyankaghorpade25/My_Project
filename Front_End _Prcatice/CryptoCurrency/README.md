@@ -7,6 +7,10 @@ mark as favourite
 clicking on row navigate to details page
 
 
+
+crypto api :CG-VEL79UvUWeQbZDDWTvTMfVoY
+
+
 2 favourite pages
 fetch all the favourite cryptocurrencies
 search for favourtir 
